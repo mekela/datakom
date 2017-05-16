@@ -1,0 +1,147 @@
+// Normally mainpage media styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+
+//styles for custom device width
+@include mq($max-width: 1600px) {
+  .container_wrap{
+    .container{
+      width:1280px !important;
+    }
+  }
+  .tab_links a{
+    font-size:14px;
+  }
+}
+
+@include mq($max-width: 1300px) {
+  .container_wrap{
+    .container{
+      width:1000px !important;
+    }
+  }
+  .center_phone strong{
+    font-size:25px;
+  }
+  .center_phone small{
+    font-size:17px;
+  }
+  .center_block{
+    font-size:19px;
+  }
+}
+
+@include mq($max-width: 1030px) {
+  .container_wrap{
+    .container{
+      width:auto !important;
+      padding-left:10px;
+      padding-right:10px;
+    }
+  }
+}
+
+@include mq($max-width: 990px) {
+  .banner_top{
+    height: auto;
+  }
+  .banner_text{
+    text-align: center;
+  }
+  .banner_title:after{
+    margin:20px auto;
+  }
+  .explore_services{
+    float: none;
+    margin:50px auto;
+  }
+  .business_inner{
+    flex-wrap: wrap;
+  }
+  .business{
+    width:32%;
+  }
+  .center_phone{
+    margin:20px 0;
+  }
+  .bnr_video{
+    text-align: center;
+  }
+  .trusted{
+    display: inline-block;
+    padding-top:0;
+  }
+  .bottom_form{
+    text-align: center;
+  }
+  .tab_form, .tab_links{
+    padding:0 15px;
+  }
+  .title_inner span{
+    display: block;
+  }
+  .tab_contacts{
+    a{
+      color: #fff;
+    }
+  }
+  .business_broadband .business{
+    width:50%;
+  }
+}
+
+@include mq($max-width: 780px) {
+  .business{
+    width:49%;
+  }
+  .mainDiv .grid-section>div{
+    padding-left:5px ;
+    padding-right:5px;
+  }
+}
+
+@include mq($max-width: 550px) {
+  .top_tags .container{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .top_tags figure{
+    width:100%;
+    margin:10px 0;
+  }
+  .explore_services, .business{
+    width:100%;
+  }
+  .compare_table_inner{
+    width:100%;
+    overflow-x: scroll;
+    position: relative;
+  }
+  .tab_links ul{
+    flex-wrap: wrap;
+  }
+  .tab_links li{
+    border:1px solid #eef1f4;
+    margin:5px 0;
+    border-radius:10px !important;
+    width:100% !important;
+  }
+  .rev_slider{
+    padding-left:15px;
+    padding-right:15px;
+  }
+  .tab_contacts{
+    font-size:18px;
+  }
+  .container_wrap{
+    overflow: hidden;
+    width:100%;
+  }
+  .business_broadband .business{
+    width:100%;
+  }
+  .title_inner{
+    font-size:24px;
+    line-height:1.1;
+  }
+}
